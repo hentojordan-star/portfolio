@@ -1,4 +1,4 @@
-👋 Hi, I’m Mitchel — a dedicated freelance developer who helps clients fix, improve, and optimize their code with clean, reliable solutions. My focus is on delivering fast results and making sure every project runs smoothly and efficiently.
+👋 Hi, I’m Mitchel —the developer nehind CodeFix Studio, a freelance service made to help clients fix, improve, and optimize their code with clean, reliable solutions. My focus is on delivering fast results and making sure every project runs smoothly and efficiently.
 
 🛠️ What I Do
 
