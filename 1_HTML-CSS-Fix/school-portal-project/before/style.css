@@ -1,1 +1,101 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Page layout */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background: #f8f9fb;
+  color: #222;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #1f3a93, #2389d7);
+  color: white;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BUG: .brand h1 uses large margin that pushes content on narrow screens */
+/* ISSUE: Not fully responsive */
+.brand h1 {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.tag { font-size: 12px; opacity: 0.9; }
+
+/* Nav */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+
+/* Panels */
+main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+.panel { background: white; padding: 18px; margin-bottom: 18px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+
+/* News */
+.news-list .news-item { margin-bottom: 12px; }
+.news-list .note { color: #777; font-size: 14px; }
+
+/* Scores table - intentionally messy */
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+/* BUG: Missing th/td borders on some cells due to broken HTML table structure */
+.scores-table th, .scores-table td {
+  padding: 8px 10px;
+  border: 1px solid #e1e1e1;
+  text-align: left;
+}
+
+/* Events table - uneven column widths on small screens */
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.events-table th, .events-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Announcements */
+.announce-list { margin-top: 10px; }
+.announce-item { padding: 8px; background: #fff7e6; margin-bottom: 8px; border-left: 4px solid #f1c40f; }
+
+/* Buttons */
+.btn {
+  background: #2389d7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer { text-align: center; padding: 14px; color: #666; margin-top: 20px; }
+
+/* Responsive attempt - but flawed */
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .main-nav ul { flex-wrap: wrap; }
+  /* BUG: brand h1 margin not reduced -> header may overflow on small devices */
+  .brand h1 { font-size: 22px; margin-right: 20px; }
+}
 
