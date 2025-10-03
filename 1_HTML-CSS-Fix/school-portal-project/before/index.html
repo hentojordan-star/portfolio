@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Portal - Broken Version</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starfield Academy - Portal (Broken)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Greenwood High School Portal</h1>
-    <nav>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Starfield Academy</h1>
+      <p class="tag">Student Portal • News • Scores • Events</p>
+    </div>
+    <nav class="main-nav">
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#news" id="news-link">News</a></li>
+        <li><a href="#news" id="nav-news">News</a></li> <!-- BUG: nav-news sometimes not targeted correctly by JS -->
         <li><a href="#scores">Scores</a></li>
-        <li><a href="#calendar">Calendar</a></li>
-        <li><a href="#info">Info</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#announcements">Announcements</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Home Section -->
-    <section id="home">
-      <h2>Welcome to Greenwood Portal</h2>
-      <p>Stay updated with school activities, news, and results. Access everything you need here.</p>
+    <!-- Home -->
+    <section id="home" class="panel home">
+      <h2>Welcome to Starfield Academy Portal</h2>
+      <p>Access updates, exam scores, event schedules, and announcements.</p>
     </section>
 
-    <!-- News Section -->
-    <section id="news">
+    <!-- News -->
+    <section id="news" class="panel news">
       <h2>Latest News</h2>
-      <div class="news-container">
-        <!-- This link is supposed to load more news but is broken due to wrong JS handling -->
-        <button id="loadNews">Load More News</button>
-        <div id="news-list">
-          <p>No news loaded yet...</p>
-        </div>
+      <div class="news-actions">
+        <!-- This button intends to load more news but JS handling is broken (see script.js) -->
+        <button id="loadNews" class="btn">Load More News</button> <!-- BUG: JS references wrong id in some functions -->
+      </div>
+
+      <!-- Hardcoded list of news articles -->
+      <div id="news-list" class="news-list">
+        <article class="news-item">
+          <h3>School Reopens for New Term</h3>
+          <p>Starfield Academy reopens on Sept 12 with new guidelines for students.</p>
+        </article>
+
+        <article class="news-item">
+          <h3>Guest Lecture Series</h3>
+          <p>Industry leaders will present a short lecture series for seniors.</p>
+        </article>
+
+        <!-- Placeholder note (looks like content but meant to be replaced dynamically) -->
+        <p class="note">More news will appear here when the system works.</p>
       </div>
     </section>
 
-    <!-- Scores Section -->
-    <section id="scores">
+    <!-- Scores -->
+    <section id="scores" class="panel scores">
       <h2>Student Scores</h2>
-      <!-- Badly formatted table (misaligned and hard to read) -->
-      <table>
+      <!-- Poorly formatted table (missing some th/td closures and semantic tags) -->
+      <table class="scores-table">
         <tr><th>Name<th>Math<th>English<th>Science
         <tr><td>John Doe<td>78<td>88<td>90
         <tr><td>Jane Smith<td>92<td>85<td>87
         <tr><td>Mark Lee<td>64<td>73<td>70
       </table>
+      <p class="note">Note: Scores are entered manually in the code and require edits for updates.</p> <!-- BUG: manual updates needed -->
     </section>
 
-    <!-- Calendar Section -->
-    <section id="calendar">
-      <h2>School Calendar</h2>
-      <div class="calendar-box">
-        <p>Term 1: 5 Jan - 20 Mar</p>
-        <p>Midterm Break: 21 Mar - 25 Mar</p>
-        <p>Term 2: 1 Apr - 30 Jun</p>
+    <!-- Events (Table-style calendar of school year events) -->
+    <section id="events" class="panel events">
+      <h2>School Year Events</h2>
+      <table class="events-table">
+        <thead>
+          <tr><th>Date<th>Event<th>Description
+        </thead>
+        <tbody>
+          <tr><td>Sept 12<td>First Term Begins<td>Students return to school
+          <tr><td>Oct 1<td>Independence Day<td>National holiday and school parade
+          <tr><td>Oct 25<td>Sports Day<td>Annual inter-house sports competition
+          <tr><td>Nov 10<td>Career Prospects Seminar<td>Talks with professionals and alumni
+          <tr><td>Dec 18<td>End of Term Exams<td>Final assessments for the term
+          <tr><td>Dec 20<td>Public Holiday<td>School closed for seasonal celebrations
+        </tbody>
+      </table>
+      <p class="note">Events are hardcoded — editing requires changing this file.</p>
+    </section>
+
+    <!-- Announcements -->
+    <section id="announcements" class="panel announcements">
+      <h2>Announcements</h2>
+      <div class="announce-controls">
+        <button id="showAnn" class="btn">Show Latest</button>
       </div>
-    </section>
-
-    <!-- Info Section -->
-    <section id="info">
-      <h2>Information Center</h2>
-      <form id="infoForm">
-        <input type="text" placeholder="Enter your question">
-        <button type="submit">Submit</button>
+      <div id="announce-list" class="announce-list">
+        <div class="announce-item">Orientation for new students next week.</div>
+        <div class="announce-item">Library hours updated on Thursdays.</div>
+      </div>
+      <form id="announceForm" class="announce-form">
+        <input type="text" id="announceInput" placeholder="Type announcement (hardcoded demo)" />
+        <button type="submit" class="btn">Submit</button>
       </form>
-      <p id="response"></p>
+      <p class="note">Announcements simulated via DOM; no admin backend provided.</p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Greenwood High. All rights reserved.</p>
+  <footer class="site-footer">
+    <p>&copy; 2025 Starfield Academy</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-  </html>
-  
+</html>
+
