@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Portal - Broken Version</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Greenwood High School Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news" id="news-link">News</a></li>
+        <li><a href="#scores">Scores</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#info">Info</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to Greenwood Portal</h2>
+      <p>Stay updated with school activities, news, and results. Access everything you need here.</p>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+      <h2>Latest News</h2>
+      <div class="news-container">
+        <!-- This link is supposed to load more news but is broken due to wrong JS handling -->
+        <button id="loadNews">Load More News</button>
+        <div id="news-list">
+          <p>No news loaded yet...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scores Section -->
+    <section id="scores">
+      <h2>Student Scores</h2>
+      <!-- Badly formatted table (misaligned and hard to read) -->
+      <table>
+        <tr><th>Name<th>Math<th>English<th>Science
+        <tr><td>John Doe<td>78<td>88<td>90
+        <tr><td>Jane Smith<td>92<td>85<td>87
+        <tr><td>Mark Lee<td>64<td>73<td>70
+      </table>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar">
+      <h2>School Calendar</h2>
+      <div class="calendar-box">
+        <p>Term 1: 5 Jan - 20 Mar</p>
+        <p>Midterm Break: 21 Mar - 25 Mar</p>
+        <p>Term 2: 1 Apr - 30 Jun</p>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info">
+      <h2>Information Center</h2>
+      <form id="infoForm">
+        <input type="text" placeholder="Enter your question">
+        <button type="submit">Submit</button>
+      </form>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Greenwood High. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
