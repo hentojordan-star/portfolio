@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starfield Academy — Student Portal</title>
+  <meta name="description" content="Starfield Academy student portal — news, scores, events and announcements." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-hidden="false">
+        <h1 class="site-title">Starfield Academy</h1>
+        <p class="site-tagline">Student Portal — News · Scores · Events</p>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <button id="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav-list" class="nav-toggle">Menu</button>
+        <ul id="main-nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#scores">Scores</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#announcements">Announcements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main" role="main">
+    <!-- Home -->
+    <section id="home" class="panel home" aria-labelledby="home-heading">
+      <h2 id="home-heading">Welcome to Starfield Academy Portal</h2>
+      <p>Stay updated with official news, view student scores, check the events calendar, and post announcements.</p>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="panel news" aria-labelledby="news-heading">
+      <div class="panel-head">
+        <h2 id="news-heading">Latest News</h2>
+        <div class="controls">
+          <button id="loadNews" class="btn" aria-controls="news-list">Load News</button>
+        </div>
+      </div>
+      <div id="news-list" class="news-list" aria-live="polite" role="region">
+        <div class="loading">News will appear here. Click “Load News” to fetch updates.</div>
+      </div>
+    </section>
+
+    <!-- Scores -->
+    <section id="scores" class="panel scores" aria-labelledby="scores-heading">
+      <div class="panel-head">
+        <h2 id="scores-heading">Student Scores</h2>
+        <div class="controls">
+          <label for="score-filter" class="sr-only">Filter by name</label>
+          <input id="score-filter" type="search" placeholder="Filter by name..." />
+        </div>
+      </div>
+
+      <div class="table-wrap" role="region" aria-labelledby="scores-heading">
+        <table class="scores-table" aria-describedby="scores-note">
+          <caption id="scores-note">Student test scores for core subjects</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Math</th>
+              <th scope="col">English</th>
+              <th scope="col">Science</th>
+            </tr>
+          </thead>
+          <tbody id="scores-body">
+            <!-- Populated by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="panel events" aria-labelledby="events-heading">
+      <h2 id="events-heading">School Year Events</h2>
+      <div class="table-wrap" role="region" aria-labelledby="events-heading">
+        <table class="events-table" aria-describedby="events-note">
+          <caption id="events-note">Important school events and holidays</caption>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody id="events-body">
+            <!-- Populated by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Announcements -->
+    <section id="announcements" class="panel announcements" aria-labelledby="announcements-heading">
+      <div class="panel-head">
+        <h2 id="announcements-heading">Announcements</h2>
+        <div class="controls">
+          <button id="toggleAnn" class="btn" aria-expanded="true">Toggle Announcements</button>
+        </div>
+      </div>
+
+      <div id="announce-list" class="announce-list" role="log" aria-live="polite">
+        <!-- initial announcements are loaded from JSON -->
+      </div>
+
+      <form id="announceForm" class="announce-form" aria-label="Add announcement">
+        <label for="announceInput" class="sr-only">Announcement</label>
+        <input id="announceInput" type="text" maxlength="200" placeholder="Type announcement..." required />
+        <button type="submit" class="btn">Post</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Starfield Academy — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
 
