@@ -4,12 +4,24 @@ This project is a web-based portal designed for **Starfield Academy**.
 It includes two versions of the site: an initial draft with several issues and a corrected version that addresses those problems.
 
 ---
-
-## 📂 Project Structure
 school-portal-project/
 │
-├── before/ # Initial version with errors and limitations
-├── after/ # Corrected and optimized version
+├── before/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── after/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── data/
+│       ├── news.json
+│       ├── scores.json
+│       └── events.json
+
 
 ---
 
