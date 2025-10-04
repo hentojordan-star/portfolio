@@ -1,0 +1,70 @@
+[
+  {
+    "category": "Breads",
+    "items": [
+      {"name": "French Baguette", "price": 2.5},
+      {"name": "Sourdough Loaf", "price": 3.0},
+      {"name": "Multigrain Bread", "price": 2.8},
+      {"name": "Brioche Bread", "price": 3.2},
+      {"name": "Bagels - Plain", "price": 1.5},
+      {"name": "Bagels - Sesame", "price": 1.5},
+      {"name": "Bagels - Cinnamon", "price": 1.5},
+      {"name": "Croissants - Butter", "price": 2.0},
+      {"name": "Croissants - Chocolate", "price": 2.2},
+      {"name": "Croissants - Almond", "price": 2.3}
+    ]
+  },
+  {
+    "category": "Cakes",
+    "items": [
+      {"name": "Chocolate Cake - Dark", "price": 15},
+      {"name": "Chocolate Cake - Milk", "price": 15},
+      {"name": "Chocolate Cake - Fudge", "price": 16},
+      {"name": "Vanilla Sponge Cake", "price": 12},
+      {"name": "Red Velvet Cake", "price": 14},
+      {"name": "Carrot Cake", "price": 13},
+      {"name": "Cupcakes - Chocolate", "price": 3},
+      {"name": "Cupcakes - Vanilla", "price": 3},
+      {"name": "Cupcakes - Rainbow", "price": 3.5},
+      {"name": "Cupcakes - Lemon", "price": 3.5}
+    ]
+  },
+  {
+    "category": "Cookies",
+    "items": [
+      {"name": "Chocolate Chip Cookies", "price": 1.5},
+      {"name": "Oatmeal Raisin Cookies", "price": 1.5},
+      {"name": "Shortbread Cookies", "price": 1.2},
+      {"name": "Peanut Butter Cookies", "price": 1.5},
+      {"name": "Brownies", "price": 2}
+    ]
+  },
+  {
+    "category": "Donuts & Pastries",
+    "items": [
+      {"name": "Glazed Donuts", "price": 1.8},
+      {"name": "Chocolate Frosted Donuts", "price": 2},
+      {"name": "Powdered Sugar Donuts", "price": 1.8},
+      {"name": "Maple Bacon Donut", "price": 2.5},
+      {"name": "Matcha Donut", "price": 2.2},
+      {"name": "Caramel Donut", "price": 2.3},
+      {"name": "Cinnamon Rolls", "price": 2},
+      {"name": "Fruit Danish", "price": 2.2}
+    ]
+  },
+  {
+    "category": "Beverages",
+    "items": [
+      {"name": "Espresso", "price": 2.5},
+      {"name": "Cappuccino", "price": 3},
+      {"name": "Latte", "price": 3},
+      {"name": "Hot Chocolate", "price": 2.8},
+      {"name": "Chai Tea Latte", "price": 3},
+      {"name": "Iced Coffee", "price": 3.2},
+      {"name": "Iced Tea", "price": 2.5},
+      {"name": "Fresh Juices - Orange", "price": 2.8},
+      {"name": "Fresh Juices - Apple", "price": 2.8},
+      {"name": "Fresh Juices - Carrot", "price": 2.8}
+    ]
+  }
+]
