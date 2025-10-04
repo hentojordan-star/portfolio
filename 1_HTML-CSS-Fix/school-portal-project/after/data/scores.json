@@ -1,1 +1,6 @@
+[
+  { "name": "Alice Johnson", "subject": "Mathematics", "score": 85 },
+  { "name": "Brian Smith", "subject": "Science", "score": 78 },
+  { "name": "Clara James", "subject": "English", "score": 92 }
+]
 
