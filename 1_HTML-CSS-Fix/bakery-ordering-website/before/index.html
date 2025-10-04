@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Crumbs Bakery</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; }
+    h1 { color: darkred; }
+    h2 { color: brown }
+    table { border: 1px solid black; width: 95%; margin-bottom: 20px; }
+    td { padding: 6px; }
+    .menu-section { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
 
+<h1>Welcome to Sweet Crumbs Bakery</h1>
+<p>Your favorite place for freshly baked delights and treats.</p>
+
+<!-- Breads Section -->
+<div class="menu-section">
+  <h2>Breads</h2>
+  <ul>
+    <li>French Baguette</li>
+    <li>Sourdough Loaf</li>
+    <li>Multigrain Bread</li>
+    <li>Brioche Bread</li>
+    <li>Bagels - Plain, Sesame, Cinnamon</li>
+    <li>Croissants Butter, Chocolate, Almond</li>
+    <li>Ciabatta</li>
+    <li>Pretzels</li>
+  </ul>
+</div>
+
+<!-- Cakes Section -->
+<div class="menu-section">
+  <h2>Cakes</h2>
+  <ul>
+    <li>Chocolate Cake - Dark, Milk, Fudge</li>
+    <li>Vanilla Sponge Cake</li>
+    <li>Red Velvet Cake</li>
+    <li>Carrot Cake</li>
+    <li>Cupcakes (Chocolate, Vanilla, Rainbow, Lemon)</li>
+    <li>Cheesecake (misplaced)</li>
+    <li>Macarons (misplaced)</li>
+    <li>Tiramisu</li>
+  </ul>
+</div>
+
+<!-- Cookies Section -->
+<div class="menu-section">
+  <h2>Cookies</h2>
+  <ul>
+    <li>Oatmeal Raisin Cookies</li>
+    <li>Chocolate Chip Cookies</li>
+    <li>Shortbread Cookies</li>
+    <li>Peanut Butter Cookies</li>
+    <li>Brownies</li>
+  </ul>
+</div>
+
+<!-- Donuts Section -->
+<div class="menu-section">
+  <h2>Donuts & Pastries</h2>
+  <ul>
+    <li>Glazed Donuts</li>
+    <li>Chocolate Frosted Donuts</li>
+    <li>Powdered Sugar Donuts</li>
+    <li>Maple Bacon Donut</li>
+    <li>Matcha Donut</li>
+    <li>Caramel Donut</li>
+    <li>Cinnamon Rolls (misplaced under donuts)</li>
+    <li>Fruit Danish</li>
+  </ul>
+</div>
+
+<!-- Beverages Section -->
+<div class="menu-section">
+  <h2>Beverages</h2>
+  <table>
+    <tr><td>Fresh Coffee</td><td>Espresso, Cappuccino, Latte</td></tr>
+    <tr><td>Hot Chocolate</td><td></td></tr>
+    <tr><td>Chai Tea Latte</td><td></td>
+    <tr><td>Iced Coffee</td><td>Iced Tea</td></tr>
+    <tr><td>Fresh Juices</td><td>Orange, Apple, Carrot</td></tr>
+  <!-- missing </table> -->
+</div>
+
+<!-- Order Form -->
+<div class="menu-section">
+  <h2>Order Online</h2>
+  <form id="orderForm">
+    <label>Full Name:</label> <input type="text" name="orderName"><br><br>
+    <label>Select Item:</label> <input type="text" id="orderItem"><br><br>
+    <label>Quantity:</label> <input type="number" name="amount"><br><br>
+    <button id="submit">Place Order</button>
+  </form>
+</div>
+
+<!-- Booking Form -->
+<div class="menu-section">
+  <h2>Book a Table</h2>
+  <form id="bookingForm">
+    <label>Your Name</label><input type="text" name="name"><br><br>
+    <label>Date</label><input type="date" name="date"><br><br>
+    <label>Guests</label><input type="number" name="guests"><br><br>
+    <button id="submit">Book Now</button> <!-- duplicate ID -->
+  </form>
+</div>
+
+</body>
+      </html>
+  
