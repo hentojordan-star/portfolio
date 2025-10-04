@@ -1,1 +1,70 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+h1 {
+  color: darkred;
+  text-align: center;
+}
+
+h2 {
+  color: brown;
+  margin-top: 20px;
+}
+
+/* Menu sections */
+.menu-section {
+  margin-bottom: 30px;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Table (beverages) */
+table {
+  width: 95%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Forms */
+input[type="text"], input[type="number"], input[type="date"] {
+  padding: 4px;
+  margin: 2px 0;
+  width: 200px;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Slight misalignment for demonstration */
+.menu-section form {
+  margin-left: 10px;
+}
+
+#bookingForm {
+  margin-left: 20px;
+}
 
