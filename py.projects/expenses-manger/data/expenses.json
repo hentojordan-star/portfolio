@@ -1,1 +1,33 @@
+[
+  {
+    "date": "2025-01-05",
+    "category": "Office Supplies",
+    "description": "Printer ink and paper",
+    "amount": 45.90
+  },
+  {
+    "date": "2025-01-10",
+    "category": "Utilities",
+    "description": "Electricity bill",
+    "amount": 120.50
+  },
+  {
+    "date": "2025-01-15",
+    "category": "Transportation",
+    "description": "Fuel for company van",
+    "amount": 75.00
+  },
+  {
+    "date": "2025-02-02",
+    "category": "Marketing",
+    "description": "Social media ads",
+    "amount": 200.00
+  },
+  {
+    "date": "2025-02-10",
+    "category": "Salaries",
+    "description": "Part-time staff wages",
+    "amount": 500.00
+  }
+]
 
