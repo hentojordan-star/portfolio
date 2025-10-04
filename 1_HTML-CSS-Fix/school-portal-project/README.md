@@ -30,3 +30,4 @@ The **after** version improves the portal with:
 - Display student scores in a structured format.  
 - Calendar of school events and important dates.  
 - Organized layout for easier updates and scalability.
+- Data section containing necessary format for inputting information to guide the school when editing.
